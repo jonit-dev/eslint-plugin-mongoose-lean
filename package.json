@@ -1,0 +1,13 @@
+{
+  "main": "lib/index.js",
+  "name": "eslint-plugin-mongoose-lean",
+  "version": "1.0.7",
+  "description": "Custom ESLint rules for Mongoose lean",
+  "author": "Joao Paulo Furtado",
+  "license": "MIT",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "6.0.0",
+    "@typescript-eslint/parser": "6.0.0",
+    "eslint": "7.0.0"
+  }
+}
