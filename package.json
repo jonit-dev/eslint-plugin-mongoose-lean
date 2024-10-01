@@ -1,8 +1,8 @@
 {
   "main": "lib/index.js",
-  "name": "eslint-plugin-mongoose-lean",
-  "version": "1.0.7",
-  "description": "Custom ESLint rules for Mongoose lean",
+  "name": "eslint-plugin-mongoose-performance",
+  "version": "0.0.1",
+  "description": "Custom ESLint rules for Mongoose, focusing on performance",
   "author": "Joao Paulo Furtado",
   "license": "MIT",
   "dependencies": {
