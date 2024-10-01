@@ -9,7 +9,7 @@ This guide will help you set up, test, and finally publish `eslint-plugin-mongoo
 - Node.js environment
 - npm account with a valid authentication token
 
-### 1. Linking the Plugin Locally
+### Testing your changes locally
 
 To test your changes in a real project without publishing the package to npm, you can link the plugin locally using Yarn’s `link` feature.
 
@@ -47,7 +47,7 @@ module.exports = {
 };
 ```
 
-### 2. Running ESLint with the Plugin
+### Running ESLint with the Plugin
 
 After linking the plugin and updating your ESLint configuration, run ESLint in your project to test the plugin:
 
@@ -57,39 +57,13 @@ yarn eslint . --ext .js,.ts
 
 This will apply the custom rules defined in `eslint-plugin-mongoose-performance`.
 
-### 3. Updating the Plugin
+### Updating the Plugin
 
-If you make updates to the plugin source code while testing, changes will automatically be reflected in the linked project because the link points to the plugin's source folder. However, if your plugin requires a build step, follow these instructions:
+If you make updates to the plugin source code while testing, changes will automatically be reflected in the linked project because the link points to the plugin's source folder.
 
-#### Step 1: Rebuild the Plugin (if applicable)
-
-If your plugin uses a build system (e.g., TypeScript or Babel), you must rebuild the plugin after making changes. For example, with TypeScript, run:
-
-```bash
-yarn build
-```
-
-or
-
-```bash
-tsc
-```
-
-This will compile the updated source code to the appropriate output folder (usually `lib/`).
-
-#### Step 2: Rerun ESLint
-
-Once your plugin is rebuilt, rerun ESLint in your project to see the updates in action:
-
-```bash
-yarn eslint . --ext .js,.ts
-```
-
-### 4. Unlinking the Plugin
+### Unlinking the Plugin
 
 When you are done testing your plugin locally, you can unlink it from your project to restore the original state.
-
-#### Unlink the Plugin
 
 In the project where you linked the plugin, run:
 
@@ -105,7 +79,7 @@ If needed, you can also unlink the global link by running the following command 
 yarn unlink
 ```
 
-### 5. Publishing the Plugin
+### Publishing the Plugin
 
 After completing the development and testing of your `eslint-plugin-mongoose-performance` plugin, you can publish it to npm for broader usage.
 
